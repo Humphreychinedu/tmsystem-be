@@ -61,7 +61,7 @@ public class TravelManagementController {
         return new ResponseEntity<>(departmentService.getDepartments(), HttpStatus.OK);
     }
 
-    @PostMapping(value = "/department")
+    @PutMapping(value = "/department")
     public ResponseEntity<Optional<Department>> updateDepartment(@RequestBody Department department) {
         return new ResponseEntity<>(departmentService.updateDepartment(department), HttpStatus.OK);
     }

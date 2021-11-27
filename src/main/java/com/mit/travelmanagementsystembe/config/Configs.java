@@ -34,7 +34,7 @@ public class Configs {
                 "Travel Management System allows organizations plan and manage staff travels and meeting arrangement.",
                 "Version 1",
                 "Terms of service",
-                new Contact("Mefendja Chinedu Humphrey ", "http://localhost:8095/swagger-ui.html", "mefendja.chinedu@gmail.com"),
+                new Contact("Mefendja Chinedu Humphrey ", "https://travel-management-system-be.herokuapp.com/swagger-ui.html", "mefendja.chinedu@gmail.com"),
                 "License of API", "API license URL", Collections.emptyList());
     }
 
