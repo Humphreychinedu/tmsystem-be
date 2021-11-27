@@ -23,7 +23,7 @@ public class Employee {
     private String name;
     private Integer age;
     private String mobileNo;
-    private Gender sex;
+    private String sex;
     private String email;
     private String department;
     private String grade;
