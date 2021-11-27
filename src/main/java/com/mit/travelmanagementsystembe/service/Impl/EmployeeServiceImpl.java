@@ -4,13 +4,14 @@ import com.mit.travelmanagementsystembe.entity.Employee;
 import com.mit.travelmanagementsystembe.repository.EmployeeRepository;
 import com.mit.travelmanagementsystembe.service.EmployeeService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;

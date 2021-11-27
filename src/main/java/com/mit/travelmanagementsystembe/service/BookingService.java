@@ -9,9 +9,9 @@ public interface BookingService {
 
     Optional<Booking> createBooking(Booking booking);
 
-    List<Booking> getBookings(Booking booking);
+    List<Booking> getBookings();
 
     Optional<Booking> getBooking(Long id);
 
-    Optional<Booking> updateBooking();
+    Optional<Booking> updateBooking(Booking booking);
 }

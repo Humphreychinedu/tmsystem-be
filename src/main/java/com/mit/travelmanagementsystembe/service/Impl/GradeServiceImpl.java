@@ -3,17 +3,17 @@ package com.mit.travelmanagementsystembe.service.Impl;
 import com.mit.travelmanagementsystembe.entity.Grade;
 import com.mit.travelmanagementsystembe.repository.GradeRepository;
 import com.mit.travelmanagementsystembe.service.GradeService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class GradeServiceImpl implements GradeService {
 
-    private GradeRepository gradeRepository;
+    private final GradeRepository gradeRepository;
 
     @Override
     public Optional<Grade> createGrade(Grade grade) {
@@ -22,12 +22,12 @@ public class GradeServiceImpl implements GradeService {
 
     @Override
     public Optional<Grade> updateGrade(Grade grade) {
-        return Optional.empty();
+        return Optional.of(gradeRepository.save(grade));
     }
 
     @Override
     public Optional<Grade> getGradeById(Long id) {
-        return Optional.empty();
+        return gradeRepository.findById(id);
     }
 
     @Override
