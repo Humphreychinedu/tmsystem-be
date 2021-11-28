@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface EmployeeService {
 
-    Optional<Employee> createEmployee(Employee employee);
+    Employee createEmployee(Employee employee);
 
     Optional<Employee> updateEmployee(Employee employee);
 

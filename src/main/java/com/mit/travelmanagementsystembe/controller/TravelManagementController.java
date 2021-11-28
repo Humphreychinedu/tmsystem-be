@@ -27,7 +27,7 @@ public class TravelManagementController {
 
 
     @PostMapping(value = "/employee")
-    public ResponseEntity<Optional<Employee>> createEmployee(@RequestBody Employee employee) {
+    public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
         return new ResponseEntity<>(employeeService.createEmployee(employee), HttpStatus.OK);
     }
 

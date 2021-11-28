@@ -17,8 +17,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
 
     @Override
-    public Optional<Employee> createEmployee(Employee employee) {
-        return Optional.of(employeeRepository.save(employee));
+    public Employee createEmployee(Employee employee) {
+        return Optional.of(employeeRepository.save(employee)).get();
     }
 
     @Override
