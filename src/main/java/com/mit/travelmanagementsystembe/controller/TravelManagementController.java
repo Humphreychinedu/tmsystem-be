@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/management")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TravelManagementController {
 
     private EmployeeService employeeService;
