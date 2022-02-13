@@ -29,5 +29,6 @@ public class Employee {
     private String grade;
     private String supervisor;
     private String branch;
+    private String status;
 
 }
