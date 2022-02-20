@@ -11,7 +11,7 @@ public class OAuth2ResourceServerConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.cors().and().csrf().and()
+        http.cors().and().csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/internal/**")
                 .permitAll()
